@@ -80,6 +80,8 @@ $grupos | ForEach-Object{
 		LogError("Grupo $grupo_atual não encontrado!!")
 		LogError("Verifique os nomes dos grupos para exportar e execute novamente este script.")
 		LogError("Encerrando...")
+		Log("Pressione qualquer tecla para finalizar")
+		[Console]::ReadLine()
 		Exit(0)
 	}
 	
